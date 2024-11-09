@@ -1,2 +1,2 @@
 "use strict";
-document.write("TypeScript is love, TypeScript is life >_<");
+// test
