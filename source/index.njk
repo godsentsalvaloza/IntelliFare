@@ -6,6 +6,7 @@ import: "/contaner/command/index"
 
 <!-- Main Content-->
 <main id="main-content">
+  {%- for post in collections.homepage -%}
   <!-- First container - Welcome Section-->
   <section id="welcome-section" data-aos="fade-in">
     <h1 id="header-title">IntelliFare</h1>
@@ -61,5 +62,6 @@ import: "/contaner/command/index"
     </div>
   </section>
   <!-- /Third container-->
+  {%- endfor -%}
 </main>
 <!-- / Main Content-->

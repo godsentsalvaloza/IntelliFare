@@ -1,7 +1,8 @@
 /* Global Variables */
 :root {
-  --main-secondary-color: #12355b;
-  --main-primary-color: #420039;
+  --main-secondary-color: #420039;
+  --main-background-color: #333;
+  --main-primary-color: #12355b;
   --main-text-color: #f2f2f2;
 }
 * {
@@ -9,7 +10,7 @@
   scroll-behavior: smooth;
 }
 body {
-  background-color: var(--main-primary-color);
+  background-color: var(--main-background-color);
   margin: 0;
   padding: 0;
   font-family: "Noto Sans", sans-serif;
@@ -24,12 +25,12 @@ img.logo {
   border-radius: 20px;
   /* margin: 5px auto; */
   width: 100px;
-  transform: scale(0.6); 
+  transform: scale(0.6);
 }
 
 /* Nav Bar */
 nav#top-nav-bar {
-  background-color: var(--main-secondary-color);
+  background-color: var(--main-primary-color);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -66,7 +67,7 @@ nav div.link-containers a {
 nav div.link-containers a:hover {
   transform: scale(1.1);
   background-color: var(--main-text-color);
-  color: var(--main-primary-color);
+  color: var(--main-secondary-color);
   transition-duration: 0.3s;
   border-radius: 10px;
   padding: 5px;
@@ -75,7 +76,7 @@ nav div.link-containers a:active {
   color: var(--main-text-color);
   transition-duration: 0.3s;
   text-decoration: none;
-  background-color: var(--main-primary-color);
+  background-color: var(--main-secondary-color);
 }
 a#header-logo-refer-link {
   text-decoration: none;
@@ -97,14 +98,14 @@ div#footer-logo img {
 }
 footer {
   margin-top: auto;
-  background-color: var(--main-secondary-color);
+  background-color: var(--main-primary-color);
   display: flex;
   align-items: center;
   box-sizing: border-box;
   padding: 0 20px;
   justify-content: space-between;
   height: auto;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 footer div:nth-child(1) a {
@@ -117,7 +118,7 @@ footer div:nth-child(1) a {
 }
 footer div:nth-child(1) a:hover {
   background-color: var(--main-text-color);
-  color: var(--main-primary-color);
+  color: var(--main-secondary-color);
   transition-duration: 0.3s;
   transform: scale(1.3);
   border-radius: 10px;
@@ -135,13 +136,13 @@ footer a:active {
   color: var(--main-text-color);
   transition-duration: 0.3s;
   text-decoration: none;
-  background-color: var(--main-primary-color);
+  background-color: var(--main-secondary-color);
 }
 /* / Sticky - Footer */
 
 main#main-content {
   padding-top: 70px;
-  background-color: #333;
+  background-color: var(--main-background-color);
 }
 
 /* Welcome Section*/
@@ -154,8 +155,8 @@ main section#welcome-section::before {
   content: "";
   background-image: url(/resources/main/Jeepney.jpg);
   background-repeat: no-repeat;
-  background-size: cover;  
-  background-position: center;  
+  background-size: cover;
+  background-position: center;
   position: absolute;
   inset: 0;
   opacity: 0.2;
@@ -182,7 +183,7 @@ main section#welcome-section button {
   color: var(--main-text-color);
   font-size: 1.5em;
   text-align: center;
-  background-color: var(--main-primary-color);
+  background-color: var(--main-secondary-color);
   border: none;
   margin: auto;
   display: block;
@@ -195,7 +196,7 @@ main section#welcome-section button:hover {
   background-color: var(--main-text-color);
   font-size: 1.5em;
   text-align: center;
-  color: var(--main-primary-color);
+  color: var(--main-secondary-color);
   border: none;
   margin: auto;
   display: block;
@@ -241,18 +242,17 @@ main section.article-section .article-content-text:nth-of-type(2) {
 
 main section.article-section .article-content-text h2 {
   font-size: 3em;
-  margin: 0;
   text-align: left;
 }
 main section.article-section .article-content-text p {
   font-size: 1.3em;
-  margin: 0;
+  text-align: justify;
 }
 
 main section.article-section button {
   color: var(--main-text-color);
   font-size: 1.3em;
-  background-color: var(--main-primary-color);
+  background-color: var(--main-secondary-color);
   border: none;
   display: block;
   padding: 1em 3em;
@@ -263,7 +263,7 @@ main section.article-section button {
 main section.article-section button:hover {
   background-color: var(--main-text-color);
   font-size: 1.3em;
-  color: var(--main-primary-color);
+  color: var(--main-secondary-color);
   border: none;
   display: block;
   transform: scale(1.1);
@@ -293,6 +293,9 @@ main section.article-section a {
   }
 }
 @media screen and (max-width: 800px) {
+  main section.article-section button {
+    margin: auto;
+  }
   main section.article-section {
     width: 100%;
     height: 40em;
@@ -312,18 +315,18 @@ main section.article-section a {
     flex-direction: column;
   }
   footer div a {
-    padding-bottom: 10px;
-    font-size: 1em;
+    padding-bottom: 20px;
+    font-size: 1.2em;
   }
   footer {
-    height: 15em;
+    height: 20em;
   }
   footer div#footer-logo img {
     width: 110px;
   }
   footer div:nth-child(1) a:hover {
     background-color: var(--main-text-color);
-    color: var(--main-primary-color);
+    color: var(--main-secondary-color);
     transition-duration: 0.3s;
     transform: scale(1.05);
     border-radius: 10px;
@@ -331,9 +334,6 @@ main section.article-section a {
   }
 }
 @media screen and (max-width: 710px) {
-  nav#top-nav-bar header span {
-    display: none;
-  }
   div#nav-links-responsive a {
     display: none;
   }
@@ -378,19 +378,15 @@ main section.article-section a {
     padding: 1.1em 2.5em;
   }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 500px) {
+  header a span {
+    display: none;
+  }
   main section.article-section {
-    height: 45em;
+    height: auto;
   }
   main section.article-section:nth-of-type(3) {
-    height: 50em;
-  }
-  main section#welcome-section h1 {
-    font-size: 3em;
-    padding-top: 1em;
-  }
-  main section#welcome-section p {
-    font-size: 1.1em;
+    height: auto;
   }
 }
-/* /Respo
+/* /Responsiveness*/
