@@ -227,9 +227,10 @@ main section.article-section:nth-of-type(3) {
   padding: 0 20px;
 }
 main section.article-section img {
-  width: 600px;
-  height: 400px;
+  width: 550px;
+  height: 350px;
   border-radius: 15px;
+  border: #420039 5px solid;
 }
 main section.article-section .article-content-text {
   color: var(--main-text-color);
