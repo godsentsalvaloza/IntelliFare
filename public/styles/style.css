@@ -18,14 +18,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-html {
+/* html {
   height: 100%;
-}
+} */
 img.logo {
   border-radius: 20px;
   /* margin: 5px auto; */
   width: 100px;
-  transform: scale(0.6);
+  transform: scale(0.55);
 }
 
 /* Nav Bar */
@@ -36,7 +36,7 @@ nav#top-nav-bar {
   position: fixed;
   width: 100%;
   z-index: 999;
-  height: 70px;
+  height: 60px;
 }
 .dropdown {
   display: none;
@@ -141,7 +141,7 @@ footer a:active {
 /* / Sticky - Footer */
 
 main#main-content {
-  padding-top: 70px;
+  padding-top: 60px;
   background-color: var(--main-background-color);
 }
 
@@ -390,3 +390,88 @@ main section.article-section a {
   }
 }
 /* /Responsiveness*/
+
+/*  */
+/*  */
+
+/* ABOUT PAGE STYLE */
+section.article-about {
+  width: 100%;
+  min-height: 20em;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+section.article-about:nth-of-type(1) {
+  background-color: #404040;
+}
+section.article-about:nth-of-type(2) {
+  background-color: #333;
+}
+section.article-about:nth-of-type(3) {
+  background-color: #262626;
+}
+section.article-about:nth-of-type(4) {
+  background-color: #1a1a1a;
+}
+section.article-about p,
+h2 {
+  color: var(--main-text-color);
+  text-align: justify;
+}
+section.article-about h2 {
+  font-size: 2.5em;
+}
+
+section.article-about p {
+  font-size: 1.2em;
+}
+@media screen and (max-width: 1040px) {
+  section.article-about h2 {
+    font-size: 3em;
+  }
+  section.article-about p#history {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.article-about h2 {
+    font-size: 2.5em;
+  }
+  section.article-about p#history {
+    font-size: 1.1em;
+    margin-top: -10px;
+  }
+}
+@media screen and (max-width: 710px) {
+  section.article-about h2 {
+    font-size: 2.6em;
+  }
+  section.article-about p#history {
+    font-size: 1em;
+  }
+
+  section.article-about p {
+    font-size: 1.2em;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 590px) {
+  section.article-about p#history {
+    font-size: 1em;
+    margin-top: 20px;
+  }
+}
+/* /ABOUT PAGE STYLE */
+
+/* MORE PAGE STYLE */
+
+ul#members-list li {
+  color: var(--main-text-color);
+  font-size: 1.2em;
+  list-style-type: none;
+}
+/* /MORE PAGE STYLE */

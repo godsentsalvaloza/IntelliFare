@@ -1,0 +1,60 @@
+---
+title: About | IntelliFare
+layout: "base.njk"
+import: "/contaner/command/index"
+---
+
+<!-- Main Content-->
+<main id="main-content">
+  <!-- first container-->
+  {%- for post in collections.about -%}
+  <section class="article-about" data-aos="fade-in">
+    <div class="article-content-text">
+      <h2>{{ post.data.first_article_name }}</h2>
+      <p>
+        {{ post.data.first_article_description }}
+      </p>
+    </div>
+  </section>
+  <!-- /first container-->
+
+  <!-- second container-->
+  <section class="article-about" data-aos="fade-in">
+    <div class="article-content-text">
+      <h2>{{ post.data.second_article_name }}</h2>
+      <ul id="members-list">
+        <li>{{ post.data.memberA }}</li>
+        <li>{{ post.data.memberB }}</li>
+        <li>{{ post.data.memberC }}</li>
+        <li>{{ post.data.memberD }}</li>
+        <li>{{ post.data.memberE }}</li>
+        <li>{{ post.data.memberF }}</li>
+        <li>{{ post.data.memberG }}</li>
+      </ul>
+    </div>
+  </section>
+  <!-- second container-->
+
+  <!-- third container-->
+  <section class="article-about" data-aos="fade-in">
+    <div class="article-content-text">
+      <h2>{{ post.data.third_article_name }}</h2>
+      <p>
+        {{ post.data.third_article_description }}
+      </p>
+    </div>
+  </section>
+  <!-- third container-->
+
+  <!-- fourth container-->
+  <!-- <section class="article-about" data-aos="fade-in">
+    <div class="article-content-text">
+      <h2>{{ post.data.fourth_article_name }}</h2>
+      <p>{{ post.data.fourth_article_description }}</p>
+    </div>
+  </section>
+  {%- endfor -%}
+  fourth container -->
+</main>
+<!-- / Main Content-->
+</main>
