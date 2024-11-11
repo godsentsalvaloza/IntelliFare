@@ -37,24 +37,34 @@ import: "/contaner/command/index"
 
   <!-- third container-->
   <section class="article-about" data-aos="fade-in">
-    <div class="article-content-text">
-      <h2>{{ post.data.third_article_name }}</h2>
-      <p>
+  <div class="article-content-text">
+    <h2>{{ post.data.third_article_name }}</h2>
+    <p>
         {{ post.data.third_article_description }}
       </p>
-    </div>
+    
+    <p>
+      <i class="fa-regular fa-envelope"></i>
+
+      Email:
+      <a href="mailto:{{ post.data.email_address }}" class="contact-links">{{
+        post.data.email_address
+      }}</a>
+    </p>
+    
+    <p>
+      <i class="fa-brands fa-github"></i>
+      Github:
+      <a href="{{ post.data.github_page_link }}" class="contact-links">{{
+        post.data.github_page_name
+      }}</a>
+    </p>
+    
+  </div>
   </section>
   <!-- third container-->
 
-  <!-- fourth container-->
-  <!-- <section class="article-about" data-aos="fade-in">
-    <div class="article-content-text">
-      <h2>{{ post.data.fourth_article_name }}</h2>
-      <p>{{ post.data.fourth_article_description }}</p>
-    </div>
-  </section>
   {%- endfor -%}
-  fourth container -->
 </main>
 <!-- / Main Content-->
 </main>

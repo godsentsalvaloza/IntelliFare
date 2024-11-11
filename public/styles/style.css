@@ -475,3 +475,36 @@ ul#members-list li {
   list-style-type: none;
 }
 /* /MORE PAGE STYLE */
+
+/* CONTACT PAGE STYLE */
+a.contact-links {
+  color: var(--main-text-color);
+  transition-duration: 0.3s;
+}
+a.contact-links:hover {
+  background-color: var(--main-text-color);
+  color: var(--main-primary-color);
+  transition-duration: 0.3s;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+a.contact-links:active {
+  color: var(--main-text-color);
+  transition-duration: 0.3s;
+  text-decoration: none;
+  background-color: var(--main-primary-color);
+}
+section#section-map {
+  display: block;
+}
+iframe {
+  width: 40em;
+  height: 20em;
+  border-radius: 15px;
+}
+@media screen and (max-width: 710px) {
+  iframe {
+    width: 100%;
+    height: 75%;
+  }
+}

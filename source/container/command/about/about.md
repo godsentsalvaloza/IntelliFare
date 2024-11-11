@@ -18,5 +18,11 @@ memberF: Oclarino, Red Adrianne - Resarcher
 memberG: Zubeldia, Allen Mathew - Researcher
 
 third_article_name: Contact
-third_article_description: Test
+third_article_description: You can contact us in the following platforms below
+
+email_address: godsentsalvalozaX@protonmail.com
+
+github_page_name: godsentsalvaloza
+
+github_page_link: https://www.github.com/godsentsalvaloza
 ---

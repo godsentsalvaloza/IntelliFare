@@ -24,7 +24,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&amp;display=swap"
       rel="stylesheet"
     />
-
+    <!-- JQuery JS Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- BootStrap CSS Library -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -48,9 +49,6 @@
     {{ content | safe }}
     {% include 'footer.njk'%}
 
-    <!-- Local JS -->
-    <script src="/scripts/out/script.js"></script>
-
     <!-- Bootstrap JS Library -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -67,5 +65,7 @@
         mirror: true,
       });
     </script>
+    <!-- Local JS -->
+    <script src="/scripts/out/script.js"></script>
   </body>
 </html>
