@@ -24,8 +24,6 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&amp;display=swap"
       rel="stylesheet"
     />
-    <!-- JQuery JS Library -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- BootStrap CSS Library -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -99,22 +97,27 @@
         <select name="" id="startOption" onchange="setStartStation()">
           <option selected disabled>-- Choose a location --</option>
           <option value="0">AFP Housing</option>
+          <option value="1">Villa Anita</option>
           <option value="1">Sta. Barbara Villas 1</option>
-          <option value="2">Buntong Palay (Purok Uno)</option>
-          <option value="3">Buntong Palay (Purok Dos)</option>
-          <option value="4">Riverside (Modesta)</option>
-          <option value="5">Fortune</option>
-          <option value="6">Boystown</option>
-          <option value="7">Molave (Gen. Ordoñez)</option>
-          <option value="8">Meralco</option>
-          <option value="9">Conception</option>
-          <option value="10">Paliparan</option>
-          <option value="11">Bayan (Marikina)</option>
-          <option value="12">Tañong (Marikina)</option>
-          <option value="13">Riverbanks</option>
-          <option value="14">Katipunan (LRT)</option>
-          <option value="15">J.P. Rizal</option>
-          <option value="16">Cubao (Aurora Blvd)</option>
+          <option value="1">Buntong Palay (Purok Uno)</option>
+          <option value="2">Buntong Palay (Bago Umahon)</option>
+          <option value="2">Buntong Palay (Purok Dos)</option>
+          <option value="3">Riverside (Modesta)</option>
+          <option value="4">Fortune</option>
+          <option value="5">Boystown</option>
+          <option value="5">Balagtas</option>
+          <option value="6">Molave (Gen. Ordoñez)</option>
+          <option value="7">Meralco</option>
+          <option value="8">Conception</option>
+          <option value="9">Paliparan (E.G. Manalo)</option>
+          <option value="10">Bayan (Marikina)</option>
+          <option value="11">Tañong (Marikina)</option>
+          <option value="12">Riverbanks Center</option>
+          <option value="13">Katipunan (LRT-2)</option>
+          <option value="14">J.P. Rizal</option>
+          <option value="14">Hi-Top Supermarket (F. Castillo)</option>
+          <option value="14">Anonas (LRT-2)</option>
+          <option value="15">Cubao (Gateway / Aurora Boulevard)</option>
         </select>
         <br />
         <br />
@@ -122,22 +125,27 @@
         <select name="" id="endOption" onchange="setEndStation()">
           <option selected disabled>-- Choose a location --</option>
           <option value="0">AFP Housing</option>
+          <option value="1">Villa Anita</option>
           <option value="1">Sta. Barbara Villas 1</option>
-          <option value="2">Buntong Palay (Purok Uno)</option>
-          <option value="3">Buntong Palay (Purok Dos)</option>
-          <option value="4">Riverside (Modesta)</option>
-          <option value="5">Fortune</option>
-          <option value="6">Boystown</option>
-          <option value="7">Molave (Gen. Ordoñez)</option>
-          <option value="8">Meralco</option>
-          <option value="9">Conception</option>
-          <option value="10">Paliparan</option>
-          <option value="11">Bayan (Marikina)</option>
-          <option value="12">Tañong (Marikina)</option>
-          <option value="13">Riverbanks</option>
-          <option value="14">Katipunan (LRT)</option>
-          <option value="15">J.P. Rizal</option>
-          <option value="16">Cubao (Aurora Blvd)</option>
+          <option value="1">Buntong Palay (Purok Uno)</option>
+          <option value="2">Buntong Palay (Bago Umahon)</option>
+          <option value="2">Buntong Palay (Purok Dos)</option>
+          <option value="3">Riverside (Modesta)</option>
+          <option value="4">Fortune</option>
+          <option value="5">Boystown</option>
+          <option value="5">Balagtas</option>
+          <option value="6">Molave (Gen. Ordoñez)</option>
+          <option value="7">Meralco</option>
+          <option value="8">Conception</option>
+          <option value="9">Paliparan (E.G. Manalo)</option>
+          <option value="10">Bayan (Marikina)</option>
+          <option value="11">Tañong (Marikina)</option>
+          <option value="12">Riverbanks Center</option>
+          <option value="13">Katipunan (LRT-2)</option>
+          <option value="14">J.P. Rizal</option>
+          <option value="14">Hi-Top Supermarket (F. Castillo)</option>
+          <option value="14">Anonas (LRT-2)</option>
+          <option value="15">Cubao (Gateway / Aurora Boulevard)</option>
         </select>
 
         <button
@@ -159,7 +167,7 @@
             Estimated Discounted fare: <span id="textDiscount">₱0</span>
           </p>
           <p class="fare-text-desc">
-            Estimated Travel Time: <span id="travelTime">0 minute</span>
+            Estimated Travel Time: <span id="travelTime">0 Minute</span>
           </p>
         </div>
       </div>
