@@ -54,9 +54,8 @@ function calculate(startStation: number, endStation: number): void {
   }
 
   // Logic for computing the regular fare
-  if (distance === 0) {
-    regularFare = 0;
-  } else if (distance <= 4) {
+
+  if (distance <= 4) {
     regularFare = 13;
   } else if (distance == 5) {
     regularFare = 15;
@@ -88,7 +87,7 @@ function calculate(startStation: number, endStation: number): void {
   // logic for computing travel time
   switch (distance) {
     case 0:
-      travel = 0;
+      travel = 2;
       break;
     case 1:
       travel = 4;
