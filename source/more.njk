@@ -3,3 +3,44 @@ title: More | IntelliFare
 layout: "base.njk"
 import: "/contaner/command/more"
 ---
+
+<!-- Main Content-->
+<main id="main-content">
+  <!-- first container-->
+  {%- for post in collections.more -%}
+  <section class="article-about" data-aos="fade-in">
+    <div class="article-content-text">
+      <h2>{{ post.data.first_article_name }}</h2>
+      <p>
+        <a href="{{ post.data.first_article_link }}" class="contact-links">{{ post.data.first_article_description }}</a>
+      </p>
+    </div>
+  </section>
+  <!-- /first container-->
+
+  <!-- second container-->
+  <section class="article-about" data-aos="fade-in">
+    <div class="article-content-text">
+      <h2>{{ post.data.second_article_name }}</h2>
+      <ul id="members-list">
+        <li>{{ post.data.techA }}</li>
+        <li>{{ post.data.techB }}</li>
+        <li>{{ post.data.techC }}</li>
+        <li>{{ post.data.techD }}</li>
+        <li>{{ post.data.techE }}</li>
+        <li>{{ post.data.techF }}</li>
+        <li>{{ post.data.techG }}</li>
+        <li>{{ post.data.techH }}</li>
+        <li>{{ post.data.techI }}</li>
+    
+      </ul>
+    </div>
+  </section>
+  <!-- second container-->
+
+  
+
+  {%- endfor -%}
+</main>
+<!-- / Main Content-->
+</main>

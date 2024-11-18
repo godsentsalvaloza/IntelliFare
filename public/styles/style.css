@@ -440,13 +440,13 @@ section.article-about:nth-of-type(3) {
 section.article-about:nth-of-type(4) {
   background-color: #1a1a1a;
 }
-section.article-about p,
-h2 {
+section.article-about p {
   color: var(--main-text-color);
   text-align: justify;
 }
 section.article-about h2 {
   font-size: 2.5em;
+  color: var(--main-text-color);
 }
 
 section.article-about p {
@@ -595,5 +595,4 @@ p.fare-text-desc {
     font-size: 1.2em;
   }
 }
-
 /* For styling data output section */
