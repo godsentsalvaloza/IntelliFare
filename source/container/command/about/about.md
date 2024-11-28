@@ -9,7 +9,7 @@ first_article_description: This system is a web-based digital fare calculator de
 
 second_article_name: Members
 
-memberA: Salvaloza, Godsent John C - Lead Researcher, Lead Software Developer, Quality Assurance Specialist, Group Leader
+memberA: Salvaloza, Godsent John C - Developer
 memberB: Agudal, Rafael Lyon. - Researcher
 memberC: Ebrada, Marlou - Researcher
 memberD: Limen, Allen Mhizon - Resarcher
