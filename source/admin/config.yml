@@ -6,6 +6,17 @@ media_folder: "public/resources/main"
 public_folder: "resources/main"
 
 collections:
+  # Fare stops
+  - name: "index"
+    label: "Jeepney Information"
+    folder: "source/container/command/"
+    create: true # Prevent users from creating new documents in this collection
+    slug: "{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - label: "Jeepney Stop"
+        name: "stop_name"
+        widget: "string"
+
   # More
   - name: "index"
     label: "Homepage"
