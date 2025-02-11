@@ -600,7 +600,24 @@ div#explanation ol > li {
 div#explanation ul {
   list-style-type: disc;
 }
-@media (max-width: 750px) {
+div#result-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div#rush-hour {
+  background-color: #ffff1a;
+  border-radius: 10px;
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+}
+div#rush-hour h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: left;
+}
+@media (max-width: 810px) {
   .inner-container {
     width: 85%;
   }
@@ -614,6 +631,20 @@ div#explanation ul {
   }
   p.fare-text-desc {
     font-size: 1.2em;
+  }
+  div#result-container {
+    flex-direction: column;
+    justify-content: baseline;
+  }
+  div#rush-hour {
+    width: 70%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  div#rush-hour h3 {
+    font-size: 1em;
+    font-weight: 600;
+    text-align: left;
   }
 }
 

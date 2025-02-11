@@ -1,5 +1,5 @@
 ---
 tags: post
-stop_name: Santa Barbara 1
+stop_name: Villa Anita
 distance_from_terminal: 1
 ---

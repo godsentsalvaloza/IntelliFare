@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && eleventy --serve",
+    "start": "eleventy --serve",
     "build": "eleventy"
   },
   "keywords": [],

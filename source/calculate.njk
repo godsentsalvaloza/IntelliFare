@@ -1,13 +1,11 @@
 ---
 title: Calculate | IntelliFare
 layout: "base.njk"
-import: "/contaner/command/calculate"
+import: "/contaner/command/calculate/stops_data"
 ---
 
 <!-- Main Content-->
 <main id="main-content">
-  {%- for post in collections.homepage -%}
-
   <section class="calculator-container" data-aos="fade-in">
     <div class="inner-container">
       <h1>Silangan Cubao (AFPHODA) Jeepney Line</h1>
@@ -16,56 +14,20 @@ import: "/contaner/command/calculate"
         <label for="startOption">Departure: </label>
         <select name="" id="startOption" onchange="setStartStation()">
           <option selected disabled>-- Choose a location --</option>
-          <option value="0">AFP Housing</option>
-          <option value="1">Villa Anita</option>
-          <option value="1">Sta. Barbara Villas 1</option>
-          <option value="1">Buntong Palay (Purok Uno)</option>
-          <option value="2">Buntong Palay (Bago Umahon)</option>
-          <option value="2">Buntong Palay (Purok Dos)</option>
-          <option value="3">Riverside (Modesta)</option>
-          <option value="4">Fortune</option>
-          <option value="5">Boystown</option>
-          <option value="5">Balagtas</option>
-          <option value="6">Molave (Gen. Ordoñez)</option>
-          <option value="7">Meralco</option>
-          <option value="8">Conception</option>
-          <option value="9">Paliparan (E.G. Manalo)</option>
-          <option value="10">Bayan (Marikina)</option>
-          <option value="11">Tañong (Marikina)</option>
-          <option value="12">Riverbanks Center</option>
-          <option value="13">Katipunan (LRT-2)</option>
-          <option value="14">J.P. Rizal</option>
-          <option value="14">Hi-Top Supermarket (F. Castillo)</option>
-          <option value="14">Anonas (LRT-2)</option>
-          <option value="15">Cubao (Gateway / Aurora Boulevard)</option>
+          {%- for post in collections.post -%}
+          <option value="0">{{ post.data.stop_name }}</option>
+          {%- endfor -%}
         </select>
         <br />
         <br />
         <label for="endOption">Destination: </label>
         <select name="" id="endOption" onchange="setEndStation()">
           <option selected disabled>-- Choose a location --</option>
-          <option value="0">AFP Housing</option>
-          <option value="1">Villa Anita</option>
-          <option value="1">Sta. Barbara Villas 1</option>
-          <option value="1">Buntong Palay (Purok Uno)</option>
-          <option value="2">Buntong Palay (Bago Umahon)</option>
-          <option value="2">Buntong Palay (Purok Dos)</option>
-          <option value="3">Riverside (Modesta)</option>
-          <option value="4">Fortune</option>
-          <option value="5">Boystown</option>
-          <option value="5">Balagtas</option>
-          <option value="6">Molave (Gen. Ordoñez)</option>
-          <option value="7">Meralco</option>
-          <option value="8">Conception</option>
-          <option value="9">Paliparan (E.G. Manalo)</option>
-          <option value="10">Bayan (Marikina)</option>
-          <option value="11">Tañong (Marikina)</option>
-          <option value="12">Riverbanks Center</option>
-          <option value="13">Katipunan (LRT-2)</option>
-          <option value="14">J.P. Rizal</option>
-          <option value="14">Hi-Top Supermarket (F. Castillo)</option>
-          <option value="14">Anonas (LRT-2)</option>
-          <option value="15">Cubao (Gateway / Aurora Boulevard)</option>
+          {%- for post in collections.post -%}
+          <option value="{{ post.data.distance_from_terminal }}">
+            {{ post.data.stop_name }}
+          </option>
+          {%- endfor -%}
         </select>
 
         <button
@@ -77,20 +39,28 @@ import: "/contaner/command/calculate"
         </button>
       </form>
       <hr />
-
-      <div id="fareDisplaySection">
-        <div>
-          <p class="fare-text-desc">
-            Estimated Fare: <span id="text-fare">₱0</span>
-          </p>
-          <p class="fare-text-desc">
-            Estimated Discounted fare: <span id="textDiscount">₱0</span>
-          </p>
-          <p class="fare-text-desc">
-            Estimated Travel Time: <span id="travelTime">0 Minute</span>
-          </p>
+      <div id="result-container">
+        <div id="fareDisplaySection">
+          <div>
+            <p class="fare-text-desc">
+              Estimated Fare: <span id="text-fare">₱0</span>
+            </p>
+            <p class="fare-text-desc">
+              Estimated Discounted fare: <span id="textDiscount">₱0</span>
+            </p>
+            <p class="fare-text-desc">
+              Estimated Travel Time: <span id="travelTime">0 Minute</span>
+            </p>
+          </div>
+        </div>
+        <div id="rush-hour">
+          <h3>
+            Due to the ongoing rush hour, rides may be harder to find, and fares
+            might change
+          </h3>
         </div>
       </div>
+
       <div id="explanation">
         <h2>How to calculate your Jeepney fare?</h2>
         <ol>
@@ -133,7 +103,5 @@ import: "/contaner/command/calculate"
     </div>
     <!-- Section for data results-->
   </section>
-
-  {%- endfor -%}
 </main>
 <!-- / Main Content-->
