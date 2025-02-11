@@ -7,9 +7,9 @@ public_folder: "resources/main"
 
 collections:
   # Fare stops
-  - name: "index"
+  - name: "stops_data"
     label: "Jeepney Information"
-    folder: "source/container/command/"
+    folder: "source/container/command/calculate/stops_data"
     create: true # Prevent users from creating new documents in this collection
     slug: "{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
