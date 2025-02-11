@@ -17,6 +17,10 @@ collections:
         name: "stop_name"
         widget: "string"
 
+      - label: "Distance from Main Terminal (KM)"
+        name: "distance_from_terminal"
+        widget: "string"
+
   # More
   - name: "index"
     label: "Homepage"

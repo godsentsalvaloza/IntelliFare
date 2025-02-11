@@ -4,6 +4,7 @@ const rushHourIndicator = document.querySelector("#rush-hour");
 const test = document.querySelector("#text-fare");
 const testDiscount = document.querySelector("#textDiscount");
 const travelTime = document.querySelector("#travelTime");
+const distanceInfo = document.querySelector("#distance-info");
 const baseFare = 13;
 let stationIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 let startStation = 0;
@@ -149,6 +150,7 @@ function calculate(startStation, endStation) {
   }
   // Returns the values to the HTML document if the elements are found
   if (test && testDiscount && travelTime) {
+    distanceInfo.textContent = distance + "KM";
     test.textContent = "₱" + regularFare;
     testDiscount.textContent = "₱" + discountedFare;
     travelTime.textContent = travel + " Minutes";
