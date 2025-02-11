@@ -160,7 +160,7 @@ main section#welcome-section::before {
   background-position: center;
   position: absolute;
   inset: 0;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 main section#welcome-section h1 {
   text-align: center;
@@ -581,6 +581,25 @@ p.fare-text-desc {
   padding-left: 10px;
   font-size: 1.5em;
 }
+div#explanation {
+  background-color: #cccccc;
+  padding: 30px;
+  border-radius: 10px;
+}
+div#explanation h2 {
+  text-align: center;
+}
+div#explanation ol {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+div#explanation ol > li {
+  margin-top: 1.2em;
+}
+
+div#explanation ul {
+  list-style-type: disc;
+}
 @media (max-width: 750px) {
   .inner-container {
     width: 85%;
@@ -597,4 +616,5 @@ p.fare-text-desc {
     font-size: 1.2em;
   }
 }
+
 /* For styling data output section */
