@@ -11,7 +11,7 @@ collections:
     label: "Jeepney Information"
     folder: "source/container/command/calculate/stops_data"
     create: true # Prevent users from creating new documents in this collection
-    slug: "{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{stop_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - label: "Jeepney Stop"
         name: "stop_name"
