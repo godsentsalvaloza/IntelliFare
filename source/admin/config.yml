@@ -9,9 +9,10 @@ collections:
   - name: "about"
     label: "About"
     folder: "source/container/command/about"
-    create: true # Allow users to create new documents in this collection
+    create: false # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
+      # First Article
       - label: "First Article Title - About"
         name: "first_article_name"
         widget: "string"
@@ -19,3 +20,32 @@ collections:
       - label: "First Article Description - About"
         name: "first_article_description"
         widget: "markdown"
+
+      # Second Article
+     - { label: "Group Member", name: "memberA", widget: "string" }
+      - { label: "Group Member", name: "memberB", widget: "string" }
+      - { label: "Group Member", name: "memberC", widget: "string" }
+      - { label: "Group Member", name: "memberD", widget: "string" }
+      - { label: "Group Member", name: "memberE", widget: "string" }
+      - { label: "Group Member", name: "memberF", widget: "string" }
+
+      # Third Article
+      - label: "Third Article Title - About"
+        name: "third_article_name"
+        widget: "string"
+
+      - label: "Third Article Description - About"
+        name: "third_article_description"
+        widget: "markdown"
+
+      - label: "Email Address"
+        name: "email_address"
+        widget: "string"
+
+      - label: "Github"
+        name: "github_page_name"
+        widget: "string"
+
+      - label: "Github Link"
+        name: "github_page_link"
+        widget: "string"
