@@ -1,10 +1,11 @@
+{%- for post in collections.homepage -%}
 <!-- Nav Bar-->
 <nav id="top-nav-bar">
   <!-- Logo and Name section -->
   <header>
     <a href="/" id="header-logo-refer-link">
       <img
-        src="/resources/main/IntellilFare-Logo.png"
+        src="{{ post.data.website_logo }}"
         alt="IntellilFare-Logo"
         loading="lazy"
         class="logo"
@@ -40,3 +41,4 @@
     </ul>
   </div>
 </nav>
+{%- endfor -%}

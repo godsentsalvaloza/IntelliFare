@@ -1,3 +1,4 @@
+{%- for post in collections.homepage -%}
 <!-- Footer-->
 <!-- Links -->
 <footer>
@@ -13,7 +14,7 @@
   <div id="footer-logo">
     <a href="/index.html" id="header-logo-refer-link">
       <img
-        src="/resources/main/IntellilFare-Logo.png"
+        src="{{ post.data.website_logo }}"
         alt="IntellilFare-Logo"
         loading="lazy"
         id="footer-logo-clickable"
@@ -23,3 +24,4 @@
   </div>
 </footer>
 <!-- / Footer-->
+{%- endfor -%}

@@ -1,4 +1,5 @@
 ---
+website_logo: /resources/main/IntellilFare-Logo.png
 name: Homepage
 # First article
 first_article_name: Introducing IntelliFare

@@ -1,3 +1,8 @@
+---
+import: "/contaner/command/index"
+---
+
+{%- for post in collections.homepage -%}
 <!DOCTYPE html>
 <html lang="en-PH">
   <head>
@@ -11,7 +16,7 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="/resources/main/IntellilFare-Logo.png"
+      href="{{ post.data.website_logo }}"
       type="image/x-icon"
     />
 
@@ -99,3 +104,4 @@
   </body>
 </html>
 <!-- There is a light that never goes out -->
+{%- endfor -%}
