@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "public/resources/main"
+public_folder: "resources/main"
+
+collections:
+  - name: "about"
+    label: "About"
+    folder: "src/container/command/about"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      - {
+        label: "First Article Title - About",
+        name: "first_article_name", widget: "string"
+        }
+
+       - {
+       label: "First Article Description - About",
+       name: "first_article_description", widget: "markdown"
+      }
+
