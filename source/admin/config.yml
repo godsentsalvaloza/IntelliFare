@@ -11,13 +11,11 @@ collections:
     folder: "src/container/command/about"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
-      - {
-        label: "First Article Title - About",
-        name: "first_article_name", widget: "string"
-        }
+    fields:
+      - label: "First Article Title - About"
+        name: "first_article_name"
+        widget: "string"
 
-       - {
-       label: "First Article Description - About",
-       name: "first_article_description", widget: "markdown"
-      }
-
+      - label: "First Article Description - About"
+        name: "first_article_description"
+        widget: "markdown"
