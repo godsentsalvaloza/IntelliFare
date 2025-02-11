@@ -6,6 +6,64 @@ media_folder: "public/resources/main"
 public_folder: "resources/main"
 
 collections:
+  # More
+  - name: "more"
+    label: "More"
+    folder: "source/container/command/more"
+    create: false # Prevent users from creating new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{product_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      # First Article
+      - label: "First Article Title - About"
+        name: "first_article_name"
+        widget: "string"
+
+      - label: "First Article Description - About"
+        name: "first_article_description"
+        widget: "markdown"
+
+      # Second Article
+      - label: "Second Article Title - About"
+        name: "second_article_name"
+        widget: "string"
+
+      - label: "Technology List"
+        name: "techA"
+        widget: "string"
+
+      - label: "Technology List"
+        name: "techB"
+        widget: "string"
+
+      - label: "Technology List"
+        name: "techC"
+        widget: "string"
+
+      - label: "Technology List"
+        name: "techD"
+        widget: "string"
+
+      - label: "Technology List"
+        name: "techE"
+        widget: "string"
+
+      - label: "Technology List"
+        name: "techF"
+        widget: "string"
+
+      - label: "Technology List"
+        name: "techG"
+        widget: "string"
+
+      - label: "Technology List"
+        name: "techH"
+        widget: "string"
+
+      - label: "Technology List"
+        name: "techI"
+        widget: "string"
+
+  # About
   - name: "about"
     label: "About"
     folder: "source/container/command/about"
