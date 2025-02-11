@@ -1,9 +1,10 @@
 /* Global Variables */
 :root {
-  --main-secondary-color: #420039;
-  --main-background-color: #333;
-  --main-primary-color: #12355b;
-  --main-text-color: #f2f2f2;
+  --main-secondary-color: #fff; /* Bright golden yellow for accents */
+  --main-background-color: #bfbfbf; /* Soft, off-white for minimal glare */
+  --main-primary-color: #b3b3b3; /* Bold, readable blue */
+  --main-text-color: #1a1a1a; /* Near-black for strong contrast */
+  --main-accent-color: #2d6a4f;
 }
 * {
   box-sizing: border-box;
@@ -66,17 +67,17 @@ nav div.link-containers a {
 }
 nav div.link-containers a:hover {
   transform: scale(1.1);
-  background-color: var(--main-text-color);
+  background-color: var(--main-accent-color);
   color: var(--main-secondary-color);
   transition-duration: 0.3s;
   border-radius: 10px;
   padding: 5px;
 }
 nav div.link-containers a:active {
-  color: var(--main-text-color);
+  color: var(--main-secondary-color);
   transition-duration: 0.3s;
   text-decoration: none;
-  background-color: var(--main-secondary-color);
+  background-color: var(--main-accent-color);
 }
 a#header-logo-refer-link {
   text-decoration: none;
@@ -117,7 +118,7 @@ footer div:nth-child(1) a {
   transition-duration: 0.3s;
 }
 footer div:nth-child(1) a:hover {
-  background-color: var(--main-text-color);
+  background-color: var(--main-accent-color);
   color: var(--main-secondary-color);
   transition-duration: 0.3s;
   transform: scale(1.3);
@@ -136,7 +137,7 @@ footer a:active {
   color: var(--main-text-color);
   transition-duration: 0.3s;
   text-decoration: none;
-  background-color: var(--main-secondary-color);
+  background-color: var(--main-accent-color);
 }
 /* / Sticky - Footer */
 
@@ -159,7 +160,7 @@ main section#welcome-section::before {
   background-position: center;
   position: absolute;
   inset: 0;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 main section#welcome-section h1 {
   text-align: center;
@@ -193,7 +194,7 @@ main section#welcome-section button {
   border-radius: 10px;
 }
 main section#welcome-section button:hover {
-  background-color: var(--main-text-color);
+  background-color: var(--main-accent-color);
   font-size: 1.5em;
   text-align: center;
   color: var(--main-secondary-color);
@@ -211,7 +212,7 @@ main section#welcome-section a {
 
 /* Article Section*/
 main section.article-section {
-  background-color: #404040;
+  background-color: #b3b3b3;
   width: 100%;
   height: 35em;
   display: flex;
@@ -221,7 +222,7 @@ main section.article-section {
   padding: 0 20px;
 }
 main section.article-section:nth-of-type(3) {
-  background-color: #333;
+  background-color: #a6a6a6;
   width: 100%;
   height: 35em;
   padding: 0 20px;
@@ -230,7 +231,7 @@ main section.article-section img {
   width: 550px;
   height: 350px;
   border-radius: 15px;
-  border: #420039 5px solid;
+  border: #2d6a4f 5px solid;
 }
 main section.article-section .article-content-text {
   color: var(--main-text-color);
@@ -264,7 +265,7 @@ main section.article-section button,
 }
 main section.article-section button:hover,
 .calculate-button:hover {
-  background-color: var(--main-text-color);
+  background-color: var(--main-accent-color);
   font-size: 1.3em;
   color: var(--main-secondary-color);
   border: none;
@@ -429,16 +430,16 @@ section.article-about {
   padding: 20px;
 }
 section.article-about:nth-of-type(1) {
-  background-color: #404040;
+  background-color: #a6a6a6;
 }
 section.article-about:nth-of-type(2) {
-  background-color: #333;
+  background-color: #999;
 }
 section.article-about:nth-of-type(3) {
-  background-color: #262626;
+  background-color: #8c8c8c;
 }
 section.article-about:nth-of-type(4) {
-  background-color: #1a1a1a;
+  background-color: #808080;
 }
 section.article-about p {
   color: var(--main-text-color);
@@ -505,17 +506,17 @@ a.contact-links {
   transition-duration: 0.3s;
 }
 a.contact-links:hover {
-  background-color: var(--main-text-color);
-  color: var(--main-primary-color);
+  background-color: var(--main-accent-color);
+  color: var(--main-secondary-color);
   transition-duration: 0.3s;
   font-size: 1.1em;
   border-radius: 5px;
 }
 a.contact-links:active {
-  color: var(--main-text-color);
+  color: var(--main-secondary-color);
   transition-duration: 0.3s;
   text-decoration: none;
-  background-color: var(--main-primary-color);
+  background-color: var(--main-accent-color);
 }
 section#section-map {
   display: block;
@@ -534,7 +535,7 @@ iframe {
 
 /* calc */
 .calculator-container {
-  background-color: #404040;
+  background-color: var(--main-background-color);
   width: 100%;
   min-height: 35em;
   height: auto;
@@ -542,12 +543,13 @@ iframe {
   padding: 20px;
 }
 .inner-container {
-  background-color: #333;
+  background-color: #d9d9d9;
   color: var(--main-text-color);
   width: 75%;
   margin: auto;
   padding: 20px;
   border-radius: 20px;
+  border: 5px solid #2d6a4f;
 }
 .inner-container h1 {
   text-align: center;
@@ -573,7 +575,7 @@ label {
 }
 
 div span {
-  color: #ff570a;
+  color: #00b300;
 }
 p.fare-text-desc {
   padding-left: 10px;

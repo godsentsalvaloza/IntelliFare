@@ -9,13 +9,12 @@ first_article_description: This system is a web-based digital fare calculator de
 
 second_article_name: Members
 
-memberA: Salvaloza, Godsent John C - Developer
-memberB: Agudal, Rafael Lyon. - Researcher
-memberC: Ebrada, Marlou - Researcher
-memberD: Limen, Allen Mhizon - Resarcher
-memberE: Manipor, Mark Clarenz - Researcher
-memberF: Oclarino, Red Adrianne - Resarcher
-memberG: Zubeldia, Allen Mathew - Researcher
+memberA: Salvaloza, Godsent John C - Developer, Researcher
+memberB: Agudal, Rafael Lyon. - Member
+memberC: Ebrada, Marlou - Member
+memberD: Limen, Allen Mhizon - Member
+memberE: Manipor, Mark Clarenz - Member
+memberF: Zubeldia, Allen Mathew - Member
 
 third_article_name: Contact
 third_article_description: You can contact us in the following platforms below
