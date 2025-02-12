@@ -6,6 +6,25 @@ media_folder: "public/resources/main"
 public_folder: "resources/main"
 
 collections:
+  # Fare Configuration
+  - name: "calculate"
+    label: "Calculator Configuration"
+    folder: "source/container/command/calculate/"
+    create: false # Prevent users from creating new documents in this collection
+    slug: "{{stop_number}}-{{stop_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - label: "Tags"
+        name: "token"
+        widget: "string"
+
+      - label: "Base Fare"
+        name: "base_fare"
+        widget: "string"
+
+      - label: "Calculation Announcement"
+        name: "announcement"
+        widget: "markdown"
+
   # Fare stops
   - name: "stops_data"
     label: "Jeepney Information"
