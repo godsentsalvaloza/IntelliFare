@@ -19,7 +19,7 @@ import: "/contaner/command/calculate/stops_data"
         <select name="" id="startOption" onchange="setStartStation()">
           <option selected disabled>-- Choose a location --</option>
           {%- for post in collections.post -%}
-          <option value="0">{{ post.data.stop_name }}</option>
+          <option value="{{ post.data.distance_from_terminal }}">{{ post.data.stop_name }}</option>
           {%- endfor -%}
         </select>
         <br />

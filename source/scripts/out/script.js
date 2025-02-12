@@ -7,8 +7,7 @@ const travelTime = document.querySelector("#travelTime");
 const distanceInfo = document.querySelector("#distance-info");
 const baseFare = Number(document.querySelector("#base_fare"));
 let stationIndex = [
-  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-  1, 1, 1, 1, 1,
+  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 ];
 let startStation = 0;
 let endStation = 0;
