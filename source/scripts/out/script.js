@@ -6,7 +6,10 @@ const testDiscount = document.querySelector("#textDiscount");
 const travelTime = document.querySelector("#travelTime");
 const distanceInfo = document.querySelector("#distance-info");
 const baseFare = 13;
-let stationIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let stationIndex = [
+  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+  1, 1, 1, 1,
+];
 let startStation = 0;
 let endStation = 0;
 let distance = 0;

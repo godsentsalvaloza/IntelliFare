@@ -11,7 +11,7 @@ collections:
     label: "Jeepney Information"
     folder: "source/container/command/calculate/stops_data"
     create: true # Prevent users from creating new documents in this collection
-    slug: "{{stop_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{stop_number}}-{{stop_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - label: "Jeepney Stop"
         name: "stop_name"
@@ -19,6 +19,10 @@ collections:
 
       - label: "Distance from Main Terminal (KM)"
         name: "distance_from_terminal"
+        widget: "string"
+
+      - label: "Stop Number (Index)"
+        name: "stop_number"
         widget: "string"
 
   # More

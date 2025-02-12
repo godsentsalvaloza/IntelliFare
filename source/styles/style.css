@@ -2,9 +2,9 @@
 :root {
   --main-secondary-color: #fff; /* Bright golden yellow for accents */
   --main-background-color: #bfbfbf; /* Soft, off-white for minimal glare */
-  --main-primary-color: #b3b3b3; /* Bold, readable blue */
+  --main-primary-color: #8080ff; /* Bold, readable blue */
   --main-text-color: #1a1a1a; /* Near-black for strong contrast */
-  --main-accent-color: #2d6a4f;
+  --main-accent-color: #4d4dff;
 }
 * {
   box-sizing: border-box;
@@ -231,7 +231,7 @@ main section.article-section img {
   width: 550px;
   height: 350px;
   border-radius: 15px;
-  border: #2d6a4f 5px solid;
+  border: #8080ff 5px solid;
 }
 main section.article-section .article-content-text {
   color: var(--main-text-color);
@@ -549,7 +549,7 @@ iframe {
   margin: auto;
   padding: 20px;
   border-radius: 20px;
-  border: 5px solid #2d6a4f;
+  border: 5px solid #8080ff;
 }
 .inner-container h1 {
   text-align: center;
