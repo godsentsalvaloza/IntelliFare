@@ -7,7 +7,8 @@ const travelTime = document.querySelector("#travelTime");
 const distanceInfo = document.querySelector("#distance-info");
 const baseFare = Number(document.querySelector("#base_fare"));
 let stationIndex = [
-  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+  1, 1, 1, 1, 1, 1,
 ];
 let startStation = 0;
 let endStation = 0;
@@ -34,7 +35,17 @@ function isRushHour() {
   return false;
 }
 
-// Example usage
+function formatTravelTime(mins) {
+  if (mins >= 60) {
+    const hours = Math.floor(mins / 60);
+    const minutes = mins % 60;
+    return minutes > 0
+      ? `${hours} Hour and ${minutes} Minutes`
+      : `${hours} Hour`;
+  }
+  return `${mins} Minutes`;
+}
+
 if (isRushHour()) {
   rushHourIndicator.style.display = "block";
 } else {
@@ -103,75 +114,77 @@ function calculate(startStation, endStation) {
   // logic for computing travel time
   switch (distance) {
     case 0:
-      travel = 2;
-      maxTravel = 4;
+      travel = 4;
+      maxTravel = 5;
       break;
     case 1:
-      travel = 4;
-      maxTravel = 7;
+      travel = 7;
+      maxTravel = 11;
       break;
     case 2:
-      travel = 8;
-      maxTravel = 12;
+      travel = 11;
+      maxTravel = 16;
       break;
     case 3:
-      travel = 12;
-      maxTravel = 15;
+      travel = 14;
+      maxTravel = 22;
       break;
     case 4:
-      travel = 16;
-      maxTravel = 19;
+      travel = 18;
+      maxTravel = 27;
       break;
     case 5:
-      travel = 20;
-      maxTravel = 24;
+      travel = 21;
+      maxTravel = 33;
       break;
     case 6:
-      travel = 24;
-      maxTravel = 29;
+      travel = 25;
+      maxTravel = 38;
       break;
     case 7:
       travel = 28;
-      maxTravel = 32;
+      maxTravel = 44;
       break;
     case 8:
       travel = 32;
-      maxTravel = 36;
+      maxTravel = 49;
       break;
     case 9:
-      travel = 36;
-      maxTravel = 41;
+      travel = 35;
+      maxTravel = 55;
       break;
     case 10:
-      travel = 40;
-      maxTravel = 45;
+      travel = 39;
+      maxTravel = 60;
       break;
     case 11:
-      travel = 44;
-      maxTravel = 50;
+      travel = 42;
+      maxTravel = 66;
       break;
     case 12:
-      travel = 48;
-      maxTravel = 53;
+      travel = 46;
+      maxTravel = 71;
       break;
     case 13:
-      travel = 52;
-      maxTravel = 58;
+      travel = 49;
+      maxTravel = 77;
       break;
     case 14:
-      travel = 56;
-      maxTravel = 64;
+      travel = 53;
+      maxTravel = 82;
       break;
     case 15:
       travel = 60;
-      maxTravel = 68;
+      maxTravel = 90;
       break;
   }
   // Returns the values to the HTML document if the elements are found
   if (test && testDiscount && travelTime) {
-    distanceInfo.textContent = distance + "KM";
+    distanceInfo.textContent = distance + " KM";
     test.textContent = "₱" + regularFare;
     testDiscount.textContent = "₱" + discountedFare;
-    travelTime.textContent = travel + " Minutes - " + maxTravel + " Minutes";
+    travelTime.textContent = `${formatTravelTime(travel)} - ${formatTravelTime(
+      maxTravel
+    )}`;
   }
 }
