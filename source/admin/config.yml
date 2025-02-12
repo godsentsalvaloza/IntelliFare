@@ -25,6 +25,10 @@ collections:
         name: "stop_number"
         widget: "string"
 
+      - label: "Identifier"
+        name: "tags"
+        widget: "string"
+
   # More
   - name: "index"
     label: "Homepage"
