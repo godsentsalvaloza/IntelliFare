@@ -13,6 +13,7 @@ let distance = 0;
 let regularFare = 0;
 let discountedFare = 0;
 let travel = 0;
+let maxTravel = 0;
 
 // checks for rush hour
 function isRushHour() {
@@ -101,51 +102,67 @@ function calculate(startStation, endStation) {
   switch (distance) {
     case 0:
       travel = 2;
+      maxTravel = 4;
       break;
     case 1:
       travel = 4;
+      maxTravel = 7;
       break;
     case 2:
       travel = 8;
+      maxTravel = 12;
       break;
     case 3:
       travel = 12;
+      maxTravel = 15;
       break;
     case 4:
       travel = 16;
+      maxTravel = 19;
       break;
     case 5:
       travel = 20;
+      maxTravel = 24;
       break;
     case 6:
       travel = 24;
+      maxTravel = 29;
       break;
     case 7:
       travel = 28;
+      maxTravel = 32;
       break;
     case 8:
       travel = 32;
+      maxTravel = 36;
       break;
     case 9:
       travel = 36;
+      maxTravel = 41;
       break;
     case 10:
       travel = 40;
+      maxTravel = 45;
       break;
     case 11:
       travel = 44;
+      maxTravel = 50;
       break;
     case 12:
       travel = 48;
+      maxTravel = 53;
       break;
     case 13:
       travel = 52;
+      maxTravel = 58;
       break;
     case 14:
       travel = 56;
+      maxTravel = 64;
       break;
     case 15:
       travel = 60;
+      maxTravel = 68;
       break;
   }
   // Returns the values to the HTML document if the elements are found
@@ -153,6 +170,6 @@ function calculate(startStation, endStation) {
     distanceInfo.textContent = distance + "KM";
     test.textContent = "₱" + regularFare;
     testDiscount.textContent = "₱" + discountedFare;
-    travelTime.textContent = travel + " Minutes";
+    travelTime.textContent = travel + " Minutes - " + maxTravel + " Minutes";
   }
 }
