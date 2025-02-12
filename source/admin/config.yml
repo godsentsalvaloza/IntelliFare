@@ -14,7 +14,7 @@ collections:
     slug: "{{stop_number}}-{{stop_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - label: "Tags"
-        name: "token"
+        name: "tags"
         widget: "string"
 
       - label: "Base Fare"
