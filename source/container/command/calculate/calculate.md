@@ -1,6 +1,6 @@
 ---
 tags: token
-base_fare: "10"
+base_fare: "13"
 announcement: <ol> <li> Know the Base Fare <ul> <li> Traditional Jeepneys –
   Usually ₱13.00 for the first 4 kilometers </li> <li> Modern Jeepneys – Usually
   ₱14.00 for the first 4 kilometers </li> </ul> </li> <li> Know the Additional
