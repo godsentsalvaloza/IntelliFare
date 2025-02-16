@@ -5,7 +5,8 @@ const test = document.querySelector("#text-fare");
 const testDiscount = document.querySelector("#textDiscount");
 const travelTime = document.querySelector("#travelTime");
 const distanceInfo = document.querySelector("#distance-info");
-const baseFare = Number(document.querySelector("#base_fare"));
+let regularFare = Number(document.querySelector("#base_fare").innerHTML);
+console.log(regularFare);
 let stationIndex = [
   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
   1, 1, 1, 1, 1, 1,
@@ -13,7 +14,6 @@ let stationIndex = [
 let startStation = 0;
 let endStation = 0;
 let distance = 0;
-let regularFare = 0;
 let discountedFare = 0;
 let travel = 0;
 let maxTravel = 0;
@@ -83,31 +83,30 @@ function calculate(startStation, endStation) {
       distance += stationIndex[i];
     }
   }
+  console.log(distance);
   // Logic for computing the regular fare
-  if (distance <= 4) {
-    regularFare = 13;
-  } else if (distance == 5) {
-    regularFare = 15;
+  if (distance == 5) {
+    regularFare += 2;
   } else if (distance == 6) {
-    regularFare = 17;
+    regularFare += 4;
   } else if (distance == 7) {
-    regularFare = 19;
+    regularFare += 6;
   } else if (distance == 8) {
-    regularFare = 21;
+    regularFare += 8;
   } else if (distance == 9) {
-    regularFare = 23;
+    regularFare += 10;
   } else if (distance == 10) {
-    regularFare = 25;
+    regularFare += 12;
   } else if (distance == 11) {
-    regularFare = 27;
+    regularFare += 14;
   } else if (distance == 12) {
-    regularFare = 29;
+    regularFare += 16;
   } else if (distance == 13) {
-    regularFare = 31;
+    regularFare += 18;
   } else if (distance == 14) {
-    regularFare = 33;
+    regularFare += 20;
   } else if (distance >= 15) {
-    regularFare = 35;
+    regularFare += 22;
   }
   // 20% discounted fare
   discountedFare = Math.ceil(regularFare * 0.8);
@@ -115,7 +114,7 @@ function calculate(startStation, endStation) {
   switch (distance) {
     case 0:
       travel = 4;
-      maxTravel = 5;
+      maxTravel = 6;
       break;
     case 1:
       travel = 7;
