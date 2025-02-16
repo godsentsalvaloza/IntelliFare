@@ -6,7 +6,6 @@ const testDiscount = document.querySelector("#textDiscount");
 const travelTime = document.querySelector("#travelTime");
 const distanceInfo = document.querySelector("#distance-info");
 let regularFare = Number(document.querySelector("#base_fare").innerHTML);
-console.log(regularFare);
 let stationIndex = [
   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
   1, 1, 1, 1, 1, 1,
@@ -83,7 +82,6 @@ function calculate(startStation, endStation) {
       distance += stationIndex[i];
     }
   }
-  console.log(distance);
   // Logic for computing the regular fare
   if (distance == 5) {
     regularFare += 2;
