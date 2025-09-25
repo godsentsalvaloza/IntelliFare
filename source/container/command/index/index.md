@@ -8,7 +8,7 @@ first_article_description: Introducing IntelliFare, a web-based digital fare
   interactive interface, IntelliFare makes calculating your fare quick and easy,
   ensuring you're always prepared before your ride!
 first_article_image_alternative: IntelliFare Interface
-first_article_image: resources/main/491834053_122208929354148139_3871647963572559278_n.jpg
+first_article_image: resources/main/IntelliFare-demo.png
 second_article_link: /more
 second_article_description: To meet its functional requirements and deliver a
   seamless user experience, IntelliFare incorporates a diverse set of advanced
