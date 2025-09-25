@@ -14,16 +14,16 @@ first_article_description: This system is a Web-based Digital Fare Calculator
   theoretical learning with real-world application, ensuring that students apply
   their programming, research, and communication skills in creating a functional
   and practical tool that meets both academic and user needs.
-memberA: Salvaloza, Godsent John C - Developer, Researcher
-memberB: Agudal, Rafael Lyon. - Member
-memberC: Ebrada, Marlou - Member
-memberD: Limen, Allen Mhizon - Member
-memberE: Manipor, Mark Clarenz - Member
+memberA: Godsent John C. Salvaloza - Software Specialist, Researcher
+memberB: " "
+memberC: " "
+memberD: " "
+memberE: " "
 name: About
+memberF: "  "
 third_article_name: Contact
-memberF: Zubeldia, Allen Mathew - Member
-github_page_link: https://www.github.com/godsentsalvaloza
 email_address: godsentsalvalozaX@protonmail.com
+github_page_link: https://www.github.com/godsentsalvaloza
 tags:
   - about
 third_article_description: You can contact us in the following platforms below
